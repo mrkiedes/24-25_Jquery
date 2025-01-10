@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          // alert("test");
+          $("#crying").animate({
+            left: '+=50px',
+            opacity: "0.2",
+            height: '+=150'
+          });
+
+        });
+      });
+    </script>
+</head>
+<body>
+<button>Click Here</button>
+<img id="crying" src="img/crying_baby.webp" style="position:absolute; left:200px; top:100px; width:200px"/>
+
+</body>
+</html>

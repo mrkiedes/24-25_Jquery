@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Challenge 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#dis").click(function(){
+                $("#goodbye").hide();
+            });
+
+            $("#ap").click(function(){
+                $("#goodbye").show();
+            });
+        });
+
+    </script>
+
 </head>
 <body>
 <!-- Create a div tag with some text and an id named "goodbye".
@@ -13,8 +27,8 @@
 
 <div id="goodbye">Some text</div>
 
-<button>Click Me</button>
-<button>Click Me Too!</button>
+<button id="dis">Click Me</button>
+<button id="ap">Click Me Too!</button>
 
 
 
